@@ -1,16 +1,15 @@
-# define a function to accept a number. This function should return 1 if a number passed is more than 0
-# return -1 if a number passed is less than 0 , else it should return 0.
-
-def myfun(k):
-    if(k>0):
-        return 1
-    elif(k==0):
-        return 0
-    else:
-        return -1
-    
-        
-k1 = int(input("enter number"))
-print(myfun(k1))
-
+#accept marks from the user. Using if…….elif….  Else,  display whether result is  fail, pass, second class , first class, Distinction etc.
+k = int(input("Enter marks"))
+if(-1<k<36):
+    print("Fail")
+elif(35<k<50):
+    print("Pass")
+elif(49<k<60):
+    print("Second class")
+elif(59<k<75):
+    print("First class")
+elif(74<k<101):
+    print("Distinction")
+else:
+    print("Invalid")
     

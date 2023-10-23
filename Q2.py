@@ -1,10 +1,15 @@
-# define nested function and show how will you invoke it.
-
-def myfun():
-    def myfun1():
-        print("inside myfun1")
-    return myfun1
-    
-myfun()()
-k = myfun()
-k()
+#using switch ….case   display whether accepted character is vowel or not
+k = input("Enter vowel in uppercase")
+match k:
+    case 'A':
+        print("Vowel")
+    case 'E':
+        print("Vowel")
+    case 'I':
+        print("Vowel")
+    case 'O':
+        print("Vowel")
+    case 'U':
+        print("Vowel")
+    case _:
+        print("Not a vowel")

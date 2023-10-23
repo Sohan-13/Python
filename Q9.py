@@ -1,13 +1,11 @@
-# define a function in such a way that it can accept n number of values and print their sum. [ variable number of arguments]
-
-
-total = 0
-def myfun(*vars):
-    for i in vars:
-        global total
-        total = total + i
-    print(total)
-myfun(10,20,30)
-
-        
-
+#display fibonicii series of 10 numbers
+a=0
+b=1
+s=1
+print(a)
+print(b)
+for i in range(0,9):
+    print(s)
+    a=b
+    b=s
+    s=a+b  

@@ -1,9 +1,8 @@
-# define "myfun1()" with a print statement. now define "myfun2()" which should invoke "myfun1()" function. 
-# invoke myfun2()
-
-def myfun1():
-    print("In myfun1")
-def myfun2():
-    print("In myfun2")
-    myfun1()
-myfun2()
+#Display numbers from 3 to 30 except number 24  using while loop
+i=2
+while(i<30):
+    i+=1
+    if(i==24):
+        continue
+    print(i)
+    
