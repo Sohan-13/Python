@@ -1,11 +1,12 @@
-# Note: use List comprehension
-# create a list with the numbers from 1 to 20
-# create one more list which should contain only odd numbers from the first list
+# write a function to accept minimum 3 characters and maximum 5 characters. 
+# 	[ use default arguments method ]
 
-a=[i for i in range(1,21)]
-print(a)
+def myfun(k1):
+    print(k1)
+        
 
-b=[i for i in a if(i%2!=0)]
-print(b)
-
-
+k = input("enter string")
+if(len(k)>=3 and len(k)<=5):
+    myfun(k)
+else:
+    print("invalid")

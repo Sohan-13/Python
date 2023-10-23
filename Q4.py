@@ -1,11 +1,9 @@
-# accept a number,string,decimal,boolean value and a character from the user and store it inside the list. 
-# First print the list from the beginning and then from the end
+# define "myfun1()" with a print statement. now define "myfun2()" which should invoke "myfun1()" function. 
+# invoke myfun2()
 
-k = int(input("Enter number"))
-k1 = input("Enter string")
-k2 = float(input("Enter float"))
-k3 = bool(input("Enter bool"))
-k4 = input("Enter character")
-a=[k,k1,k2,k3,k4]
-print(a)
-print(a[::-1])
+def myfun1():
+    print("In myfun1")
+def myfun2():
+    print("In myfun2")
+    myfun1()
+myfun2()

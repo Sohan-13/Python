@@ -1,10 +1,13 @@
-# accept 5 names and store them in list. Now sort the list in ascending order display and then in descending order.
-a=[]
-for i in range(1,6):
-    n = input("enter name")
-    a.append(n)
-print(a)
-a.sort()
-print(a)
-a.sort(reverse=True)
-print(a)
+# define a function in such a way that it can accept n number of values and print their sum. [ variable number of arguments]
+
+
+total = 0
+def myfun(*vars):
+    for i in vars:
+        global total
+        total = total + i
+    print(total)
+myfun(10,20,30)
+
+        
+

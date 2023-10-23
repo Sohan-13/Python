@@ -1,12 +1,16 @@
-# accept 5 numbers, store them inside the list. now accept a number from user which he would like to remove 
-# from the list and  after removing it, display the list.
+# define a function to accept a number. This function should return 1 if a number passed is more than 0
+# return -1 if a number passed is less than 0 , else it should return 0.
 
-a=[]
-for i in range(1,6):
-    n=int(input("enter number"))
-    a.append(n)
-print(a)
+def myfun(k):
+    if(k>0):
+        return 1
+    elif(k==0):
+        return 0
+    else:
+        return -1
+    
+        
+k1 = int(input("enter number"))
+print(myfun(k1))
 
-n1 = int(input("now enter a number to remove it from the list"))
-a.remove(n1)
-print(a)
+    
